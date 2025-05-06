@@ -6,25 +6,6 @@ import { Tabs } from "@mantine/core";
 import BirthdayMessages from "./BirthdayMessages";
 import BirthdayGifters from "./BirthdayGifters";
 
-interface IGoal {
-  createdAt: bigint;
-  description: string;
-  targetAmount: bigint;
-  amountRaised?: bigint;
-}
-
-interface IBirthday {
-  id: bigint;
-  createdAt: bigint;
-  when: bigint;
-  goal: IGoal;
-  timeline: IBirthdayTimeline[];
-}
-
-interface IBirthdayTimeline {
-  createdAt: bigint;
-}
-
 interface IUser {
   fullname: string;
   nickname: string;
@@ -35,13 +16,7 @@ interface IUser {
   hasSubscription: boolean;
 }
 
-export default function ProfielTabs({
-  user,
-  birthday,
-}: {
-  birthday: IBirthday;
-  user: IUser;
-}) {
+export default function ProfielTabs({ user }: { user: IUser }) {
   return (
     <Tabs
       color="orange"

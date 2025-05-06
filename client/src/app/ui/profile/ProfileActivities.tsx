@@ -3,25 +3,6 @@ import { poppins } from "@/app/fonts";
 
 import ProfileTabs from "./ProfileTabs";
 
-interface IGoal {
-  createdAt: bigint;
-  description: string;
-  targetAmount: bigint;
-  amountRaised?: bigint;
-}
-
-interface IBirthday {
-  id: bigint;
-  createdAt: bigint;
-  when: bigint;
-  goal: IGoal;
-  timeline: IBirthdayTimeline[];
-}
-
-interface IBirthdayTimeline {
-  createdAt: bigint;
-}
-
 interface IUser {
   fullname: string;
   nickname: string;
@@ -32,13 +13,7 @@ interface IUser {
   hasSubscription: boolean;
 }
 
-export default function ProfileActivities({
-  user,
-  birthday,
-}: {
-  birthday: IBirthday;
-  user: IUser;
-}) {
+export default function ProfileActivities({ user }: { user: IUser }) {
   return (
     <div className="rounded-md border border-gray-300 h-auto w-full md:w-1/2 flex flex-col items-start justify-start space-y-5 overflow-x-hidden overflow-y-auto">
       <header className="hidden h-auto w-full flex items-center justify-between">
@@ -52,7 +27,7 @@ export default function ProfileActivities({
         </h2>
       </header>
 
-      <ProfileTabs user={user} birthday={birthday as IBirthday} />
+      <ProfileTabs user={user} />
     </div>
   );
 }

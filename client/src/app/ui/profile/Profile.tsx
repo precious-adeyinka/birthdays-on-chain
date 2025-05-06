@@ -165,7 +165,7 @@ export default function Profile() {
           />
         </div>
 
-        <ProfileActivities user={user!} birthday={birthday!} />
+        <ProfileActivities user={user!} />
       </section>
 
       {/* Confettti animations */}
