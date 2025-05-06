@@ -14,7 +14,8 @@ import { useForm } from "@mantine/form";
 import { ethers } from "ethers";
 import { useWatchContractEvent, useAccount, useWalletClient } from "wagmi";
 import { parseEther, formatEther, WalletClient } from "viem";
-import birthdaysFacet from "@/../../artifacts/contracts/facets/BOCBirthdaysFacet.sol/BOCBirthdaysFacet.json";
+import birthdaysFacet from "@/app/abis/BOCBirthdaysFacet.json";
+// import birthdaysFacet from "@/../../artifacts/contracts/facets/BOCBirthdaysFacet.sol/BOCBirthdaysFacet.json";
 
 import Goal from "./Goal";
 import UpdateGoal from "./UpdateGoal";

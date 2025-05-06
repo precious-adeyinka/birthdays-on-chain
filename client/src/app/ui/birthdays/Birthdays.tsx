@@ -12,7 +12,8 @@ import Preloader from "@/app/ui/preloader/Loader";
 
 import { ethers } from "ethers";
 import { useAccount } from "wagmi";
-import usersFacet from "@/../../artifacts/contracts/facets/BOCUsersFacet.sol/BOCUsersFacet.json";
+import usersFacet from "@/app/abis/BOCUsersFacet.json";
+// import usersFacet from "@/../../artifacts/contracts/facets/BOCUsersFacet.sol/BOCUsersFacet.json";
 
 interface IEvent {
   user: string;
@@ -29,6 +30,7 @@ interface IUser {
   fullname: string;
   nickname: string;
   gender: string;
+  currency: bigint;
   photo: string;
   joinedDate: number;
   isActive: boolean;
@@ -120,7 +122,7 @@ export default function Birthdays() {
       {/* SearchForm */}
       <SearchForm
         onSearchDone={(searchResult) => {
-          setSearchResults(searchResult);
+          setSearchResults(searchResult as ISearchResult);
         }}
         onClearSearch={() => {
           setSearchResults(null);

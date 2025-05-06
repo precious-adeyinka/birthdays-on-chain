@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "BOCAccessFacet",
+  "sourceName": "contracts/facets/BOCAccessFacet.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212200039b083a6898f1e4d1d579a863a3c2571257bc387006dfb25c58d0bbc47154b64736f6c634300081c0033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212200039b083a6898f1e4d1d579a863a3c2571257bc387006dfb25c58d0bbc47154b64736f6c634300081c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

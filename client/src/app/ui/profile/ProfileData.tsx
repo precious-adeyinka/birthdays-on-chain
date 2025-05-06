@@ -14,7 +14,8 @@ import { formatCurrentDate } from "@/app/libs/utils/index";
 import { ethers } from "ethers";
 import { useWatchContractEvent, useAccount, useWalletClient } from "wagmi";
 import { WalletClient } from "viem";
-import usersFacet from "@/../../artifacts/contracts/facets/BOCUsersFacet.sol/BOCUsersFacet.json";
+import usersFacet from "@/app/abis/BOCUsersFacet.json";
+// import usersFacet from "@/../../artifacts/contracts/facets/BOCUsersFacet.sol/BOCUsersFacet.json";
 
 import AvatarPicker from "./AvatarPicker";
 

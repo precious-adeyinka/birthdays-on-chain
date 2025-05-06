@@ -13,7 +13,8 @@ import Preloader from "@/app/ui/preloader/Loader";
 
 import { ethers } from "ethers";
 import { useAccount } from "wagmi";
-import usersFacet from "@/../../artifacts/contracts/facets/BOCUsersFacet.sol/BOCUsersFacet.json";
+import usersFacet from "@/app/abis/BOCUsersFacet.json";
+// import usersFacet from "@/../../artifacts/contracts/facets/BOCUsersFacet.sol/BOCUsersFacet.json";
 
 import Pride from "react-canvas-confetti/dist/presets/pride";
 import Fireworks from "react-canvas-confetti/dist/presets/fireworks";
@@ -164,9 +165,7 @@ export default function Profile() {
           />
         </div>
 
-        <ProfileActivities 
-        user={user!}
-        birthday={birthday!} />
+        <ProfileActivities user={user!} birthday={birthday!} />
       </section>
 
       {/* Confettti animations */}

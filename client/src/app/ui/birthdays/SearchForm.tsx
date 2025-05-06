@@ -8,7 +8,8 @@ import { poppins } from "@/app/fonts";
 import { Search } from "lucide-react";
 
 import { ethers } from "ethers";
-import platformFacets from "@/../../artifacts/contracts/facets/BOCPlatformFacet.sol/BOCPlatformFacet.json";
+import platformFacets from "@/app/abis/BOCPlatformFacet.json";
+// import platformFacets from "@/../../artifacts/contracts/facets/BOCPlatformFacet.sol/BOCPlatformFacet.json";
 import { zeroAddress } from "viem";
 
 interface EthersError {

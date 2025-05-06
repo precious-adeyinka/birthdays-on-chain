@@ -14,8 +14,10 @@ import { Alert } from "@mantine/core";
 import { ethers } from "ethers";
 import { useAccount, useWalletClient } from "wagmi";
 import { WalletClient } from "viem";
-import bocToken from "@/../../artifacts/contracts/coin/BOCToken.sol/BOCTokenV1.json";
-import birthdaysFacet from "@/../../artifacts/contracts/facets/BOCBirthdaysFacet.sol/BOCBirthdaysFacet.json";
+// import bocToken from "@/../../artifacts/contracts/coin/BOCToken.sol/BOCTokenV1.json";
+// import birthdaysFacet from "@/../../artifacts/contracts/facets/BOCBirthdaysFacet.sol/BOCBirthdaysFacet.json";
+import bocToken from "@/app/abis/BOCTokenV1.json";
+import birthdaysFacet from "@/app/abis/BOCBirthdaysFacet.json";
 
 interface EthersError {
   reason?: string;

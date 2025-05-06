@@ -16,7 +16,8 @@ import Preloader from "@/app/ui/preloader/Loader";
 import { ethers } from "ethers";
 import { formatEther } from "viem";
 import { useAccount } from "wagmi";
-import usersFacet from "@/../../artifacts/contracts/facets/BOCUsersFacet.sol/BOCUsersFacet.json";
+// import usersFacet from "@/../../artifacts/contracts/facets/BOCUsersFacet.sol/BOCUsersFacet.json";
+import usersFacet from "@/app/abis/BOCUsersFacet.json";
 
 interface IUser {
   uid: string;

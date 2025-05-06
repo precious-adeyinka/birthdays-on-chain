@@ -11,7 +11,8 @@ import { Button, Group, Modal,TextInput, NumberInput } from '@mantine/core';
 import { useForm } from '@mantine/form';
 
 import { useWriteContract, useWatchContractEvent } from "wagmi"
-import birthdaysFacet from "@/../../artifacts/contracts/facets/BOCBirthdaysFacet.sol/BOCBirthdaysFacet.json"
+import birthdaysFacet from "@/app/abis/BOCBirthdaysFacet.json"
+// import birthdaysFacet from "@/../../artifacts/contracts/facets/BOCBirthdaysFacet.sol/BOCBirthdaysFacet.json"
 
 interface IGoal {
   description: string;

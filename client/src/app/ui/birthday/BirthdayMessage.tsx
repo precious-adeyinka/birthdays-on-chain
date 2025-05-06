@@ -11,7 +11,8 @@ import { useForm } from "@mantine/form";
 import { ethers } from "ethers";
 import { useWatchContractEvent, useAccount, useWalletClient } from "wagmi";
 import { WalletClient } from "viem";
-import activitiesFacet from "@/../../artifacts/contracts/facets/BOCActivitiesFacet.sol/BOCActivitiesFacet.json";
+import activitiesFacet from "@/app/abis/BOCActivitiesFacet.json";
+// import activitiesFacet from "@/../../artifacts/contracts/facets/BOCActivitiesFacet.sol/BOCActivitiesFacet.json";
 
 interface EthersError {
   reason?: string;

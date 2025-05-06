@@ -29,9 +29,12 @@ import Preloader from "@/app/ui/preloader/Loader";
 import { ethers } from "ethers";
 import { useWatchContractEvent, useAccount, useWalletClient } from "wagmi";
 import { WalletClient } from "viem";
-import bocToken from "@/../../artifacts/contracts/coin/BOCToken.sol/BOCTokenV1.json";
-import usersFacet from "@/../../artifacts/contracts/facets/BOCUsersFacet.sol/BOCUsersFacet.json";
-import subscribeFacet from "@/../../artifacts/contracts/facets/BOCSubscribeFacet.sol/BOCSubscribeFacet.json";
+import bocToken from "@/app/abis/BOCTokenV1.json";
+import usersFacet from "@/app/abis/BOCUsersFacet.json";
+import subscribeFacet from "@/app/abis/BOCSubscribeFacet.json";
+// import bocToken from "@/../../artifacts/contracts/coin/BOCToken.sol/BOCTokenV1.json";
+// import usersFacet from "@/../../artifacts/contracts/facets/BOCUsersFacet.sol/BOCUsersFacet.json";
+// import subscribeFacet from "@/../../artifacts/contracts/facets/BOCSubscribeFacet.sol/BOCSubscribeFacet.json";
 import { parseEther } from "viem";
 
 interface EthersError {

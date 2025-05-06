@@ -17,8 +17,10 @@ import { formatCurrentDate } from "@/app/libs/utils/index";
 import { ethers } from "ethers";
 import { useWatchContractEvent, useAccount, useWalletClient } from "wagmi";
 import { parseEther, WalletClient } from "viem";
-import bocToken from "@/../../artifacts/contracts/coin/BOCToken.sol/BOCTokenV1.json";
-import activitiesFacet from "@/../../artifacts/contracts/facets/BOCActivitiesFacet.sol/BOCActivitiesFacet.json";
+// import bocToken from "@/../../artifacts/contracts/coin/BOCToken.sol/BOCTokenV1.json";
+import bocToken from "@/app/abis/BOCTokenV1.json";
+import activitiesFacet from "@/app/abis/BOCActivitiesFacet.json";
+// import activitiesFacet from "@/../../artifacts/contracts/facets/BOCActivitiesFacet.sol/BOCActivitiesFacet.json";
 
 interface EthersError {
   reason?: string;

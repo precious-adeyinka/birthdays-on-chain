@@ -13,7 +13,8 @@ import { Cake, Route, Heart } from "lucide-react";
 
 import { formatNumber } from "@/app/libs/utils/index";
 import { ethers } from "ethers";
-import birthdaysFacet from "@/../../artifacts/contracts/facets/BOCBirthdaysFacet.sol/BOCBirthdaysFacet.json";
+import birthdaysFacet from "@/app/abis/BOCBirthdaysFacet.json";
+// import birthdaysFacet from "@/../../artifacts/contracts/facets/BOCBirthdaysFacet.sol/BOCBirthdaysFacet.json";
 
 export default function Home() {
   const [loading, setLoading] = useState<boolean>(true);
