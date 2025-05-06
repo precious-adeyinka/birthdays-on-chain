@@ -28,10 +28,6 @@ export default function BirthdayMessage({
 
   const onMessageSent = () => {
     close();
-    setMessageCreatedConfetti(true);
-    setTimeout(() => {
-      setMessageCreatedConfetti(false);
-    }, 10000);
   };
 
   return (
